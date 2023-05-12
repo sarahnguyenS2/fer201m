@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #c2b506;
+  --black-color: #333;
+  --white-color: #fff;
+  --grey-color: #f1f1f1;
+}
+
 .App {
   text-align: center;
 }
@@ -28,6 +35,77 @@
   color: #61dafb;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation */
+nav {
+  background-color: var(--black-color);
+}
+
+.active {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--white-color);
+}
+
+li {
+  list-style-type: none;
+  margin: 10px 20px;
+}
+
+/* Player */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.column {
+  width: 30%;
+  margin: 10px 5px;
+}
+
+img {
+  height: 250px;
+  object-fit: cover;
+  width: 99%;
+}
+
+button {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 30px;
+}
+
+h3,
+.title {
+  padding: 10px 0;
+  background-color: var(--grey-color);
+}
+
+/* Footer */
+.footer {
+  padding: 10px 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
